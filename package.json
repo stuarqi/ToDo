@@ -1,0 +1,19 @@
+{
+  "name": "ToDo",
+  "version": "0.1.0",
+  "description": "Task list",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stuarqi/ToDo.git"
+  },
+  "author": "zhangsq@outlook.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stuarqi/ToDo/issues"
+  },
+  "homepage": "https://github.com/stuarqi/ToDo",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
