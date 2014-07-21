@@ -4,14 +4,23 @@
 	<meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,initial-scale=1.0,user-scalable=no"/>
 	<meta charset="UTF-8">
 	<title>ToDo</title>
+	<link rel="stylesheet" href="style/global.css">
+	<link rel="stylesheet" href="style/style.css">
 </head>
-<body>
+<body class="view-item">
 	<div id="group-panel" class="panel">
 		<header>
+			<a href="#">详细</a>
 			<a href="#">编辑</a>
 			<a href="#">添加</a>
 		</header>
-		<ul id="group-list" class="list"></ul>
+		<section id="group-list" class="list">
+			<ol>
+				<li><span>默认列表</span></li>
+				<li><span>购物清单</span></li>
+				<li><span>待办事项</span></li>
+			</ol>
+		</section>
 	</div>
 	<div id="item-panel" class="panel">
 		<header>
@@ -19,7 +28,35 @@
 			<a href="#">编辑</a>
 			<a href="#">添加</a>
 		</header>
-		<ul id="item-list" class="list"></ul>
+		<section id="item-list" class="list">
+			<ol>
+				<li class="complate"><span>项目1</span></li>
+				<li><span>项目2</span></li>
+				<li><span>项目3</span></li>
+				<li><span>项目4</span></li>
+				<li><span>项目5</span></li>
+				<li><span>项目6</span></li>
+				<li><span>项目7</span></li>
+				<li><span>项目8</span></li>
+				<li><span>项目9</span></li>
+				<li><span>项目10</span></li>
+				<li><span>项目11</span></li>
+				<li><span>项目12</span></li>
+				<li><span>项目13</span></li>
+				<li><span>项目14</span></li>
+				<li><span>项目15</span></li>
+				<li><span>项目16</span></li>
+				<li><span>项目17</span></li>
+				<li><span>项目18</span></li>
+				<li><span>项目19</span></li>
+				<li><span>项目20</span></li>
+			</ol>
+		</section>
 	</div>
+	<script>
+		var span = document.querySelector('#item-list>ol>li>span');
+		span.contentEditable = true;
+		span.focus();
+	</script>
 </body>
 </html>
